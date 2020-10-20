@@ -12,7 +12,7 @@ export const DadosProvider = ({ children }) => {
       ...items,
       {
         id: counter + 1,
-        texto
+        title: texto,
       }
     ]);
     setCounter(counter + 1);
@@ -27,6 +27,7 @@ export const DadosProvider = ({ children }) => {
     items,
     adicionarItem,
     removerItem,
+    setItems
   };
 
   return (

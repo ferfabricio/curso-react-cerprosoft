@@ -7,7 +7,7 @@ const MostrarDados = ({ items, onRemove }) => {
     return (
       <View key={`${item.id}`}>
         <Text onLongPress={onRemove(item.id)}>
-          {item.texto}
+          {item.title}
         </Text>
       </View>
     );
