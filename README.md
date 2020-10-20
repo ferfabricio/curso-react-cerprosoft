@@ -57,3 +57,11 @@ Adicionar no arquivo `src/App.js`
 
 `import { createStackNavigator } from '@react-navigation/stack';`
 
+## Aula 5
+
+### API
+
+Recurso utilizado: mockapi.io
+
+URL: `https://5f8f61c8693e730016d7b064.mockapi.io/api/v1/task`
+
