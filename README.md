@@ -65,3 +65,36 @@ Recurso utilizado: mockapi.io
 
 URL: `https://5f8f61c8693e730016d7b064.mockapi.io/api/v1/task`
 
+#### Instalando Axios
+
+`yarn add axios`
+
+#### Como funciona uma API REST
+
+GET /task ==> todos os resultados
+GET /task/:id => recurso especifico
+POST /task = enviar body com objeto => criar novo recurso
+PUT /task/:id = enviar body com objeto => update no recurso (todos campos)
+PATH /task/:id = enviar body com objeto parcial => atualiza campo especifico
+DELETE /task/:id => excluir recurso especifico
+
+### Promises
+
+function () : Promise
+
+const asyncFunction = Promise((resolve, reject) => {
+    if (false) {
+        resolve();
+    } else {
+        reject();
+    }
+})
+
+asyncFunction
+    .then()
+    .catch();
+
+async function exemplo () {
+    // alguma coisa async
+}
+
