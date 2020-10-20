@@ -98,3 +98,6 @@ async function exemplo () {
     // alguma coisa async
 }
 
+#### Adicionando permissão de segurança no android
+
+https://developer.android.com/training/articles/security-config
