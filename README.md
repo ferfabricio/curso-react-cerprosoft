@@ -106,6 +106,8 @@ https://developer.android.com/training/articles/security-config
 
 ### Instalando o ui-kitten
 
+Site do tema https://akveo.github.io/react-native-ui-kitten/
+
 #### Instalando dependências
 
 `yarn add @ui-kitten/components @eva-design/eva react-native-svg`
@@ -114,10 +116,43 @@ https://developer.android.com/training/articles/security-config
 
 #### Configurando o Theme
 
+- Passo 1: Adicionar dependências no arquivo App.js
+
 ```
 import * as eva from '@eva-design/eva';
 import { ApplicationProvider } from '@ui-kitten/components';
+```
 
+- Passo 2: Adicionar o provider do theme antes do return
+```
   <ApplicationProvider {...eva} theme={eva.light}>
+    ... aqui vai o conteudo que tinha antes (DadosProvider ....)
   </ApplicationProvider>
+```
+
+- Passo 3: Instando os icones
+```
+import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
+import { EvaIconsPack } from '@ui-kitten/eva-icons';
+```
+
+Adicionar dentro do ApplicationProvider o IconRegistry
+```
+<IconRegistry icons={EvaIconsPack} />
+```
+
+- Passo 4: Customizar o theme
+
+Escolher o as cores a seu gosto no site https://colors.eva.design/
+
+Baixar o json e colar ele na pasta `src`
+
+Importar o json no App.js
+```
+import * as theme from './custom-theme.json';
+```
+
+Alterar o ApplicationProvider para utilizar o theme
+```
+<ApplicationProvider {...eva} theme={{ ...eva.light, ...theme }}>
 ```
