@@ -1,15 +1,17 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 import EntradaDados from '../components/EntradaDados';
 
-import Dados from '../context/Dados';
+import { createTask } from '../services/TaskService';
 
 const EntradaDadosScreen = ({ navigation }) => {
-  const { adicionarItem } = useContext(Dados);
-
-  const onAddPress = (value) => {
-    adicionarItem(value);
-    navigation.navigate('ExibirDados');
+  const onAddPress = async (value) => {
+    try {
+      createTask(value, value);
+      navigation.navigate('ExibirDados');
+    } catch (e) {
+      console.error(e);
+    }
   }
 
   return (
