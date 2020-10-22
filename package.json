@@ -10,9 +10,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@eva-design/eva": "^2.0.0",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/native": "^5.7.6",
     "@react-navigation/stack": "^5.9.3",
+    "@ui-kitten/components": "^5.0.0",
+    "@ui-kitten/eva-icons": "^5.0.0",
     "axios": "^0.20.0",
     "prop-types": "^15.7.2",
     "react": "16.13.1",
@@ -20,7 +23,8 @@
     "react-native-gesture-handler": "^1.8.0",
     "react-native-reanimated": "^1.13.1",
     "react-native-safe-area-context": "^3.1.8",
-    "react-native-screens": "^2.11.0"
+    "react-native-screens": "^2.11.0",
+    "react-native-svg": "^12.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.0",

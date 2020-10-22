@@ -101,3 +101,25 @@ async function exemplo () {
 #### Adicionando permissão de segurança no android
 
 https://developer.android.com/training/articles/security-config
+
+## Aula 6
+
+### Instalando o ui-kitten
+
+#### Instalando dependências
+
+`yarn add @ui-kitten/components @eva-design/eva react-native-svg`
+
+`yarn add @ui-kitten/eva-icons`
+
+#### Configurando o Theme
+
+```
+import * as eva from '@eva-design/eva';
+import { ApplicationProvider } from '@ui-kitten/components';
+
+  <ApplicationProvider {...eva} theme={eva.light}>
+  </ApplicationProvider>
+```
+
+
