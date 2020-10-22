@@ -9,3 +9,7 @@ export const getAllTasks = async () => {
 export const getTask = (id) => {
   return axios.get(`${url}/task/${id}`);
 }
+
+export const createTask = (title, description) => {
+  return axios.post(`${url}/task`, { title, description });
+}
